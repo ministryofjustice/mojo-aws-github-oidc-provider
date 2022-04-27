@@ -14,7 +14,7 @@ data "aws_iam_policy_document" "github_workflow_assume_role_policy" {
     condition {
       test     = "StringLike"
       variable = "${replace(aws_iam_openid_connect_provider.this.url, "https://", "")}:sub"
-      values   = ["repo:ministryofjustice/staff-external-dynamic-list:*"]
+      values   = [for k in local.github_repositories : "repo:ministryofjustice/${k}:*"]
     }
 
     principals {
