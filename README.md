@@ -14,3 +14,4 @@ This `role-arn` can also be stored as GitHub secret in any repository. Please re
 1. Create a GitHub personal access token. Please use this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) if you need help.
 1. Add the token in the `.env` file.
 1. Make sure the `AWS_PROFILE` values matches the AWS Cli profile name for the MoJO Shared Services AWS account on your workstation. It is recommended that you use [MoJ Cloud Operations Team - Best practices guide](https://ministryofjustice.github.io/cloud-operations/documentation/team-guide/best-practices/use-aws-sso.html#configure-aws-vault) to configure your AWS-Vault with AWS SSO.
+1. Run `make apply` to apply terraform. See `Makefile` for more targets.
