@@ -1,6 +1,6 @@
 # AWS GitHub OIDC Provider
 
-An AWS Github OIDC provider is managed on MoJO Shared Services AWS account. This OIDC provider can be used in HitHub workflow action in any repositories in **ministryofjustice** GitHub organisation.
+An AWS Github OIDC provider is managed on MoJO Shared Services AWS account. This OIDC provider can be used in GitHub workflow action in any repositories in **ministryofjustice** GitHub organisation.
 
 Make sure the repository is added in the `locals.tf` file in the `github_repositories` list.
 
