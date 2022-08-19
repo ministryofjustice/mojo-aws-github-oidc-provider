@@ -4,6 +4,7 @@ locals {
     "staff-device-private-dns-zone",
     "staff-infrastructure-certificate-services",
     "staff-technology-services-github-teams",
-    "aws-trusted-advisor-to-github-issues"
+    "aws-trusted-advisor-to-github-issues",
+    "staff-infrastructure-monitoring-cluster"
   ]
 }
