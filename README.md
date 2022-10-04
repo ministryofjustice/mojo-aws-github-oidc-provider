@@ -1,3 +1,5 @@
+[![repo standards badge](https://img.shields.io/badge/dynamic/json?color=blue&style=for-the-badge&logo=github&label=MoJ%20Compliant&query=%24.result&url=https%3A%2F%2Foperations-engineering-reports.cloud-platform.service.justice.gov.uk%2Fapi%2Fv1%2Fcompliant_public_repositories%2Fmojo-aws-github-oidc-provider)](https://operations-engineering-reports.cloud-platform.service.justice.gov.uk/public-github-repositories.html#mojo-aws-github-oidc-provider "Link to report")
+
 # AWS GitHub OIDC Provider
 
 An AWS Github OIDC provider is managed on MoJO Shared Services AWS account. This OIDC provider can be used in GitHub workflow action in any repositories in **ministryofjustice** GitHub organisation.
