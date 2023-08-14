@@ -6,6 +6,7 @@ locals {
     "staff-technology-services-github-teams",
     "aws-trusted-advisor-to-github-issues",
     "nvvs-devops-monitor",
-    "network-access-control-infrastructure"
+    "network-access-control-infrastructure",
+    "mojo-aws-github-oidc-provider"
   ]
 }
