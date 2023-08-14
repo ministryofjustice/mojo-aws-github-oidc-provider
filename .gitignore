@@ -1,3 +1,9 @@
+# Local environments
+*.env
+*.env*
+*.env.*
+!.env.example
+
 # Local .terraform directories
 **/.terraform/*
 
@@ -25,13 +31,16 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
+*tfplan*
 *.tfvars
-*.tfplan
 /.vs
 *.pem
 .idea
 *.DS_Store
 *.code-workspace
 
-/.env
-/.vscode
+# ignore tfenv pinned version file
+.terraform-version
+
+# Terraform lockfile
+.terraform.lock.hcl
