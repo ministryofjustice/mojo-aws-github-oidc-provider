@@ -5,6 +5,7 @@ locals {
     "staff-infrastructure-certificate-services",
     "staff-technology-services-github-teams",
     "aws-trusted-advisor-to-github-issues",
-    "nvvs-devops-monitor"
+    "nvvs-devops-monitor",
+    "network-access-control-infrastructure"
   ]
 }
