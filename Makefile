@@ -3,22 +3,34 @@ include .env
 export
 
 fmt:
-	terraform fmt --recursive
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform fmt --recursive
 
 init:
-	terraform init -reconfigure -reconfigure \
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform init -reconfigure \
 	--backend-config="key=terraform.state"
 
 validate:
-	terraform validate
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform validate
+
+plan-out:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform plan -no-color > planfile.tfplan
 
 plan:
-	terraform plan -out terraform.tfplan
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform plan
+
+refresh:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform refresh
 
 apply:
-	terraform apply
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform apply
+
+state-list:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform state list
 
 destroy:
-	terraform destroy
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform destroy
 
-.PHONY: fmt init validate plan apply destroy
+clean:
+	rm -rf .terraform/ terraform.tfstate*
+
+.PHONY: fmt init validate plan-out plan refresh apply state-list destroy

@@ -16,15 +16,15 @@ permissions:
 
 jobs:
   terraform-apply:
-    name: 'Apply'
+    name: 'Terraform Apply'
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
 
-    # env:
-    #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #   TF_LOG: DEBUG
+    env:
+      GITHUB_TOKEN: ${{ secrets.TECH_SERVICES_GITHUB_TOKEN }}
+      GITHUB_OWNER: ministryofjustice
 
     steps:
     # Checkout the repository to the GitHub Actions runner
@@ -50,8 +50,6 @@ jobs:
       uses: hashicorp/setup-terraform@v2
       with:
         terraform_version: ${{ env.TFVERSION }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
@@ -69,11 +67,16 @@ jobs:
     - name: Terraform Plan
       run: terraform plan
 
-      # On push to main, build or change infrastructure according to Terraform configuration files
-      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
+    #   # On push to main, build or change infrastructure according to Terraform configuration files
+    #   # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
     # - name: Terraform Apply
     #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
+    #   run: terraform apply -auto-approve
+
+    # Instructions
+    - name: Manual instructions
+      run: |
+        echo "Until permission on this repository are resolved Terraform Apply needs to be run locally."
+        echo "Now run the main branch locally to apply changes\n make init\n make apply"
 
   

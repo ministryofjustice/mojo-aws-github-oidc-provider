@@ -12,6 +12,7 @@ provider "aws" {
 
 provider "github" {
   # Configuration options
+  owner = "ministryofjustice"
 }
 
 module "oidc_provider_label" {
