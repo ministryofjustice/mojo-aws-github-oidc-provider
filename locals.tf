@@ -1,13 +1,13 @@
 locals {
   github_repositories = [
     "staff-external-dynamic-list",
-    "staff-device-dns-dhcp-infrastructure",
     "staff-device-private-dns-zone",
     "staff-infrastructure-certificate-services",
     "staff-technology-services-github-teams",
     "aws-trusted-advisor-to-github-issues",
     "nvvs-devops-monitor",
     "network-access-control-infrastructure",
-    "mojo-aws-github-oidc-provider"
+    "mojo-aws-github-oidc-provider",
+    "staff-device-dns-dhcp-infrastructure"
   ]
 }
