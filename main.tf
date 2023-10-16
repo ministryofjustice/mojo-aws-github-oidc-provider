@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "mojo-aws-github-oidc-provider-core-tf-state"
-    dynamodb_table = "mojo-aws-github-oidc-provider-core-tf-lock-table"
+    bucket         = "mojo-ci-aws-github-client-oidc-provider-tf-state"
+    dynamodb_table = "mojo-ci-aws-github-client-oidc-provider-tf-lock-table"
     region         = "eu-west-2"
   }
 }
