@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - "*"
-  
+
 permissions:
   id-token: write
   contents: read
@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Analysis
-        uses: ministryofjustice/github-actions/terraform-static-analysis@main
+        uses: ministryofjustice/github-actions/terraform-static-analysis@15.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
