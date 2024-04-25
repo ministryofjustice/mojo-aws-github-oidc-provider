@@ -7,6 +7,7 @@ locals {
     "aws-trusted-advisor-to-github-issues",
     "nvvs-devops-monitor",
     "network-access-control-infrastructure",
-    "mojo-aws-github-oidc-provider"
+    "mojo-aws-github-oidc-provider",
+    "xsiam-broker-deployment-in-prod-aws"
   ]
 }
