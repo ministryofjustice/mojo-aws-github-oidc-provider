@@ -8,6 +8,7 @@ locals {
     "nvvs-devops-monitor",
     "network-access-control-infrastructure",
     "mojo-aws-github-oidc-provider",
-    "xsiam-broker-deployment-in-prod-aws"
+    "xsiam-broker-deployment-in-prod-aws",
+    "staff-device-dhcp-server"
   ]
 }
