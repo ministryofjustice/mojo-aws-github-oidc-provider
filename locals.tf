@@ -9,6 +9,7 @@ locals {
     "network-access-control-infrastructure",
     "mojo-aws-github-oidc-provider",
     "xsiam-broker-deployment-in-prod-aws",
-    "staff-device-dhcp-server"
+    "staff-device-dhcp-server",
+    "staff-device-dns-dhcp-admin"
   ]
 }
