@@ -10,6 +10,7 @@ locals {
     "mojo-aws-github-oidc-provider",
     "xsiam-broker-deployment-in-prod-aws",
     "staff-device-dhcp-server",
+    "diso-devops-ami-builder",
     "staff-device-dns-dhcp-admin"
   ]
 }
