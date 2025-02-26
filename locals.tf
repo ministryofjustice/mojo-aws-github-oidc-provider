@@ -11,6 +11,7 @@ locals {
     "xsiam-broker-deployment-in-prod-aws",
     "staff-device-dhcp-server",
     "diso-devops-ami-builder",
-    "staff-device-dns-dhcp-admin"
+    "staff-device-dns-dhcp-admin",
+    "deployment-aws-noc"
   ]
 }
