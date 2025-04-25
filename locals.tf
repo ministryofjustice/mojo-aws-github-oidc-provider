@@ -12,6 +12,7 @@ locals {
     "staff-device-dhcp-server",
     "diso-devops-ami-builder",
     "staff-device-dns-dhcp-admin",
-    "deployment-aws-noc"
+    "deployment-aws-noc",
+    "staff-device-shared-services-infrastructure"
   ]
 }
