@@ -77,5 +77,5 @@ jobs:
     - name: Manual instructions
       run: |
         echo "Until permission on this repository are resolved Terraform Apply needs to be run locally."
-        echo "Now run the main branch locally to apply changes\n tfenv use 1.1.7 \n make init \n make apply"
+        echo "Now run the main branch locally to apply changes\n make init \n make apply"
 
