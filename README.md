@@ -22,5 +22,5 @@ export MYGITHUBTOKEN="ghp_96ac5bba9c9f054d6451ae50b55996b6"
 6. Add the token in the `.env` file or add to `~/.bash_aliases` like as shown above
 7. Make sure the `AWS_PROFILE` values matches the AWS Cli profile name for the MoJO Shared Services AWS account on your workstation. It is recommended that you use [MoJ Cloud Operations Team - Best practices guide](https://ministryofjustice.github.io/cloud-operations/documentation/team-guide/best-practices/use-aws-sso.html#configure-aws-vault) to configure your AWS-Vault with AWS SSO.
 8. Make sure correct repositories are added in the `github_repositories` in the `locals.tf` file.
-9. Switch your current Terraform CLI to use version 1.1.7 if running locally.
+9. Run tfenv use 1.1.7 to set the version locally.
 10. Run `make apply` to apply terraform. See `Makefile` for more targets.
