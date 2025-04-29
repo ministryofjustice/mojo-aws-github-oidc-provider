@@ -74,9 +74,10 @@ jobs:
     #   run: terraform apply -auto-approve
 
     # Instructions
+    # Note : It is recommended to lock Terraform version to https://github.com/ministryofjustice/mojo-aws-github-oidc-provider/blob/442480963302fb987646203be7464711377c0421/versions.tf
+    # to enforce the use of a specific version across local and CI environments
     - name: Manual instructions
       run: |
         echo "Until permission on this repository are resolved Terraform Apply needs to be run locally."
-        echo "Now run the main branch locally to apply changes\n make init\n make apply"
+        echo "Now run the main branch locally to apply changes \n make init \n make apply"
 
-  

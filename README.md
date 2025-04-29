@@ -16,10 +16,11 @@ export MYGITHUBTOKEN="ghp_96ac5bba9c9f054d6451ae50b55996b6"
 ## How to use this
 
 1. Clone this repository in a directory on your developers workstation.
-1. Change your working directory to the newly created directory `aws-github-oidc-provider`.
-1. Copy the example env file `cp .env.example .env`
-1. Create a GitHub personal access token. Please use this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) if you need help.
-1. Add the token in the `.env` file or add to `~/.bash_aliases` like as shown above
-1. Make sure the `AWS_PROFILE` values matches the AWS Cli profile name for the MoJO Shared Services AWS account on your workstation. It is recommended that you use [MoJ Cloud Operations Team - Best practices guide](https://ministryofjustice.github.io/cloud-operations/documentation/team-guide/best-practices/use-aws-sso.html#configure-aws-vault) to configure your AWS-Vault with AWS SSO.
-1. Make sure correct repositories are added in the `github_repositories` in the `locals.tf` file.
-1. Run `make apply` to apply terraform. See `Makefile` for more targets.
+2. Change your working directory to the newly created directory `aws-github-oidc-provider`.
+3. Copy the example env file `cp .env.example .env`
+4. Create a GitHub personal access token. Please use this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) if you need help.
+6. Add the token in the `.env` file or add to `~/.bash_aliases` like as shown above
+7. Make sure the `AWS_PROFILE` values matches the AWS Cli profile name for the MoJO Shared Services AWS account on your workstation. It is recommended that you use [MoJ Cloud Operations Team - Best practices guide](https://ministryofjustice.github.io/cloud-operations/documentation/team-guide/best-practices/use-aws-sso.html#configure-aws-vault) to configure your AWS-Vault with AWS SSO.
+8. Make sure correct repositories are added in the `github_repositories` in the `locals.tf` file.
+9. Lock Terraform version. Please use the version in https://github.com/ministryofjustice/mojo-aws-github-oidc-provider/blob/442480963302fb987646203be7464711377c0421/versions.tf
+10. Run `make apply` to apply terraform. See `Makefile` for more targets.
